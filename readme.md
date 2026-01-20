@@ -1,15 +1,18 @@
-## AI Study Planner Agent
+# AI Study Planner Agent
 
-A full-stack generative AI agent that creates personalized exam study plans.
+A full-stack generative AI agent that helps students create personalized study plans.
 
-### Tech Stack
+## Tech Stack
 - FastAPI
 - PydanticAI
 - OpenRouter (Mistral)
-- Next.js
+- HTML / JavaScript frontend
 
-### Features
-- Structured AI output
-- Validated responses
-- Clean UI
-- Live deployment
+## Features
+- AI-powered study plan generation
+- Clean REST API
+- Error handling with fallback responses
+- Live deployed backend
+
+## Live Demo
+Backend: https://symmetrical-space-waffle-vxwxpvx57nvcxw99-8000.app.github.dev/docs
