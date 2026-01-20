@@ -122,6 +122,7 @@
   </div>
 
   <script>
+    // 🔴 LIVE BACKEND URL
     const BACKEND_URL =
       "https://symmetrical-space-waffle-vxwxpvx57nvcxw99-8000.app.github.dev";
 
@@ -146,10 +147,15 @@
           })
         });
 
+        if (!res.ok) {
+          throw new Error("Server error");
+        }
+
         const data = await res.json();
         output.innerText = data.response || "No response received.";
       } catch (err) {
-        output.innerText = "Something went wrong. Please try again.";
+        output.innerText =
+          "Backend unavailable or CORS blocked. Please try again.";
       }
 
       btn.disabled = false;
